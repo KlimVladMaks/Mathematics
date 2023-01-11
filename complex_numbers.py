@@ -190,4 +190,12 @@ class ComplexNumber:
         # Возвращаем получившееся значение
         return num_div
 
+    def get_mod(self):
+        """
+        Функция, возвращающая модуль комплексного числа.
+        :return: Комплексное число.
+        """
+        return ((self.re_z ** 2) + (self.im_z ** 2)) ** 0.5
+
+
 

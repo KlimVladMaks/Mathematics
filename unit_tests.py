@@ -192,5 +192,11 @@ class ComplexNumberTestCase(unittest.TestCase):
         cn_result = ComplexNumber.div(cn_1, cn_2)
         self.assertEqual(cn_result.get_pair_form(), (1, 1))
 
+    def test_mod(self):
 
+        cn_1 = ComplexNumber(6, 8)
+        self.assertEqual(cn_1.get_mod(), 10)
+
+        cn_1 = ComplexNumber(20, -21)
+        self.assertEqual(cn_1.get_mod(), 29)
 
